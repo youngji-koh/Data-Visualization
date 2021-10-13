@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js' integrity='sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==' crossorigin='anonymous'></script> -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vega@5"></script> -->
+
+        <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+        <title>Welcome to Lab 2</title> 
+    </head>
+    <body>
+        <h1 class="m-4 text-center">Lab 2 - Vega Lite</h1>
+        <div>
+            <div class="bg-light p-1">
+                <h2 class="m-3 text-center">1. <span class="fw-light">Fixed Width</span></h2>
+            </div>
+            <div class="m-3 row text-center">
+                <div class="col">
+                    <div id="vis-1" class="chart"></div>
+                </div>
+            </div>
+            <div class="bg-light p-1">
+                <h2 class="m-3 text-center">2. <span class="fw-light">Full Width with Window Size</span></h2>
+            </div>
+            <div class="m-3 row text-center">
+                <div class="col">
+                    <div id="vis-2" class="chart"></div>
+                </div>
+            </div>
+            <div class="bg-light p-1">
+                <h2 class="m-3 text-center">3-1. <span class="fw-light">Responsive Width</span></h2>
+            </div>
+            <div class="m-3 gx-5 row text-center">
+                <!-- when the screen is narrow, the grid becomes 12:12, and when it is wide, it becomes 8:4 -->
+                <div class="col-sm-12 col-lg-8"> <!--breakpoint of 1st div's width -->
+                    <div id="vis-3" class="chart" style="width:100%"></div>
+                </div>
+                <div class="col-sm-12 col-lg-4"> <!--breakpoint of 2nd div's width -->
+                    <div class="bg-light border border-3 rounded-3 p-3 text-start fs-5" style="width:100%">
+                        <p>
+                            This graph explains the weather type of Seattle for each month of a year.
+                            There are several weather types such as sun, fog, drizzle, rain and snow.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-light p-1">
+                <h2 class="m-3 text-center">3-2. <span class="fw-light">Layout with Bootstrap</span></h2>
+            </div>
+            <div class="m-3 gx-3 row text-center">
+                <!-- Implement here -->
+                <!-- when the screen is narrow, the grid becomes 6:6, and when it is wide, it becomes 4:8 -->
+                <!--
+                <div class="..."> 
+                    <div id="vis-4" class="chart" style="width:100%"></div>
+                </div>
+                <div class="...">
+                    <div id="vis-5" class="chart" style="width:100%"></div>
+                </div>
+                -->
+            </div>
+           
+            <div class="bg-light p-1">
+                <h2 class="m-3 text-center">4. <span class="fw-light">Interaction with JS</span></h2>
+            </div>
+            <div class="col-6 mx-auto my-3 gx-3">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-secondary" for="btnradio1">2012</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio2">2013</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio3">2014</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-secondary" for="btnradio4">2015</label>
+                </div>
+                <div id="vis-7" class="chart" style="width:100%"></div>
+            </div>   
+        </div>
+        
+    </body>
+   
+    <script type="text/javascript" src="./javascripts/practice.js"></script>
+    <script type="text/javascript" src="./javascripts/functions.js"></script>
+    
+</html>
